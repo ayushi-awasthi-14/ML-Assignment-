@@ -1,0 +1,16 @@
+{
+  "features": [
+    "Pclass",
+    "Sex",
+    "Age",
+    "SibSp",
+    "Parch",
+    "Fare",
+    "Embarked",
+    "Title",
+    "Cabin",
+    "FamilySize",
+    "IsAlone"
+  ],
+  "target": "Survived"
+}
