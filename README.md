@@ -52,7 +52,7 @@ The project demonstrates the complete machine learning pipeline: **data explorat
 
 ## c. GitHub Repository Link
 
-**Repository:** [https://github.com/ayushi-awasthi-14/ML-Assignment-.git]
+**Repository:** https://github.com/ayushi-awasthi-14/ML-Assignment-.git
 
 ---
 
@@ -84,7 +84,7 @@ The project demonstrates the complete machine learning pipeline: **data explorat
 
 ### Overall Winner for This Dataset
 
-** Best Model: Logistic Regression**
+**🏆 Best Model: Logistic Regression**
 
 **Justification:**
 - **Highest Accuracy (84.36%)** and **Best AUC Score (0.8733)** among all models
@@ -105,7 +105,11 @@ project-folder/
 ├── app.py                              # Streamlit web application
 ├── train_models.py                     # Model training & evaluation script
 ├── requirements.txt                    # Python dependencies
+<<<<<<< HEAD
 ├── README.md                           # Project documentation
+=======
+├── README.md                           # This file (project documentation)
+>>>>>>> a0f8d3f (Fix Streamlit package import paths and add runtime.txt)
 ├── test_data.csv                       # Test dataset (holdout set)
 ├── model_metadata.json                 # Feature metadata
 ├── model_comparison.csv                # Metrics comparison export
@@ -134,7 +138,11 @@ project-folder/
 
 1. **Clone the repository:**
    ```bash
+<<<<<<< HEAD
    git clone https://github.com/ayushi-awasthi-14/ML-Assignment-.git
+=======
+   git clone https://github.com/[your-username]/titanic-streamlit-classification.git
+>>>>>>> a0f8d3f (Fix Streamlit package import paths and add runtime.txt)
    cd titanic-streamlit-classification
    ```
 
@@ -207,6 +215,7 @@ The app will open at `http://localhost:8501`
 
 ## Key Features of the Streamlit Application
 
+<<<<<<< HEAD
  **Dataset Upload:** Users can upload their own test CSV or use provided test_data.csv  
  **Model Selection:** Dropdown menu to select any of 5 trained models  
  **Predictions Display:** Table showing actual vs predicted values  
@@ -215,6 +224,16 @@ The app will open at `http://localhost:8501`
  **Classification Report:** Detailed precision, recall, F1 per class  
  **Error Handling:** Validates uploaded files and missing columns  
  **Responsive Layout:** Clean sidebar controls and wide-format display  
+=======
+✅ **Dataset Upload:** Users can upload their own test CSV or use provided test_data.csv  
+✅ **Model Selection:** Dropdown menu to select any of 5 trained models  
+✅ **Predictions Display:** Table showing actual vs predicted values  
+✅ **Evaluation Metrics:** Shows Accuracy, AUC, Precision, Recall, F1, MCC  
+✅ **Confusion Matrix:** Interactive heatmap visualization  
+✅ **Classification Report:** Detailed precision, recall, F1 per class  
+✅ **Error Handling:** Validates uploaded files and missing columns  
+✅ **Responsive Layout:** Clean sidebar controls and wide-format display  
+>>>>>>> a0f8d3f (Fix Streamlit package import paths and add runtime.txt)
 
 ---
 
@@ -233,7 +252,11 @@ See `requirements.txt` for complete list:
 
 ## Author & Submission
 
+<<<<<<< HEAD
 **BITS WILP ID:** 2025ac05631  
+=======
+**BITS WILP ID:** [Your ID]  
+>>>>>>> a0f8d3f (Fix Streamlit package import paths and add runtime.txt)
 **Assignment:** Machine Learning Assignment 2  
 **Submission Date:** August 18, 2026  
 **Deadline:** 18-Aug-2026 23:59 PM
