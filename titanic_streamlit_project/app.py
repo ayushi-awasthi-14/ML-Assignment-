@@ -12,10 +12,28 @@ import pandas as pd
 import seaborn as sns
 import streamlit as st
 
-# Explicit imports to help joblib pickle restore sklearn pipeline objects in some environments.
+# Explicit imports to help joblib/pickle restore sklearn pipeline objects in Streamlit Cloud.
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.impute import SimpleImputer
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import RandomForestClassifier
+
+import sklearn
 import sklearn.pipeline
 import sklearn.compose._column_transformer
+import sklearn.preprocessing._data
+import sklearn.preprocessing._encoders
+import sklearn.impute._base
 import sklearn.linear_model._logistic
+import sklearn.tree._classes
+import sklearn.naive_bayes._base
+import sklearn.neighbors._classification
+import sklearn.ensemble._forest
 
 from sklearn.metrics import (
     accuracy_score,
