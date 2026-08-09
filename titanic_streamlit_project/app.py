@@ -11,6 +11,12 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 import streamlit as st
+
+# Explicit imports to help joblib pickle restore sklearn pipeline objects in some environments.
+import sklearn.pipeline
+import sklearn.compose._column_transformer
+import sklearn.linear_model._logistic
+
 from sklearn.metrics import (
     accuracy_score,
     classification_report,
