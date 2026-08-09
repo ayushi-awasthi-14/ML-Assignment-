@@ -207,14 +207,14 @@ The app will open at `http://localhost:8501`
 
 ## Key Features of the Streamlit Application
 
-✅ **Dataset Upload:** Users can upload their own test CSV or use provided test_data.csv  
-✅ **Model Selection:** Dropdown menu to select any of 5 trained models  
-✅ **Predictions Display:** Table showing actual vs predicted values  
-✅ **Evaluation Metrics:** Shows Accuracy, AUC, Precision, Recall, F1, MCC  
-✅ **Confusion Matrix:** Interactive heatmap visualization  
-✅ **Classification Report:** Detailed precision, recall, F1 per class  
-✅ **Error Handling:** Validates uploaded files and missing columns  
-✅ **Responsive Layout:** Clean sidebar controls and wide-format display  
+ **Dataset Upload:** Users can upload their own test CSV or use provided test_data.csv  
+ **Model Selection:** Dropdown menu to select any of 5 trained models  
+ **Predictions Display:** Table showing actual vs predicted values  
+ **Evaluation Metrics:** Shows Accuracy, AUC, Precision, Recall, F1, MCC  
+ **Confusion Matrix:** Interactive heatmap visualization  
+ **Classification Report:** Detailed precision, recall, F1 per class  
+ **Error Handling:** Validates uploaded files and missing columns  
+ **Responsive Layout:** Clean sidebar controls and wide-format display  
 
 ---
 
@@ -233,7 +233,7 @@ See `requirements.txt` for complete list:
 
 ## Author & Submission
 
-**BITS WILP ID:** [Your ID]  
+**BITS WILP ID:** 2025ac05631  
 **Assignment:** Machine Learning Assignment 2  
 **Submission Date:** August 18, 2026  
 **Deadline:** 18-Aug-2026 23:59 PM
