@@ -1,5 +1,6 @@
-"""Streamlit app for Titanic survival classification - ML Assignment 2."""
+"""Streamlit app for Titanic survival classification"""
 from __future__ import annotations
+
 import json
 from pathlib import Path
 import joblib
@@ -37,11 +38,9 @@ REQUIRED_FILES = [
     MODELS_DIR / "random_forest.pkl",
 ]
 
-
 def load_metadata() -> dict:
     with METADATA_PATH.open("r", encoding="utf-8") as handle:
         return json.load(handle)
-
 
 def prepare_uploaded_data(frame: pd.DataFrame, feature_columns: list[str]) -> pd.DataFrame:
     if all(col in frame.columns for col in feature_columns):
@@ -52,7 +51,6 @@ def prepare_uploaded_data(frame: pd.DataFrame, feature_columns: list[str]) -> pd
     raise ValueError(
         "Upload test_data.csv from this project, or a raw Titanic CSV with columns like Name, Pclass, Sex."
     )
-
 
 st.set_page_config(page_title="Titanic Survival Classification", page_icon="🚢", layout="wide")
 st.title("🚢 Titanic Survival Classification")
@@ -79,7 +77,7 @@ with st.sidebar:
     st.caption(f"Project folder: {ROOT}")
     if COMPARISON_PATH.exists():
         st.subheader("All Models (Training Metrics)")
-        st.dataframe(pd.read_csv(COMPARISON_PATH), width="stretch")
+        st.dataframe(pd.read_csv(COMPARISON_PATH), use_container_width=True)
 
 if uploaded_file is not None:
     input_frame = pd.read_csv(uploaded_file)
@@ -106,10 +104,9 @@ y_true = prepared_frame[target_column].astype(int)
 
 model_name = MODEL_OPTIONS[selected_model_label]
 model_path = MODELS_DIR / f"{model_name}.pkl"
-
 pipeline = joblib.load(model_path)
-predictions = pipeline.predict(X)
 
+predictions = pipeline.predict(X)
 try:
     probabilities = pipeline.predict_proba(X)
 except AttributeError:
@@ -136,15 +133,16 @@ metrics_df = pd.DataFrame({
     "Value": [accuracy, auc_value, precision, recall, f1, mcc],
 })
 
-st.success(f"Loaded **{selected_model_label}** on {len(X)} rows.")
+st.success(f"Loaded *{selected_model_label}* on {len(X)} rows.")
 
 col1, col2 = st.columns(2)
 with col1:
     st.subheader("Predictions")
-    st.dataframe(pd.DataFrame({"Actual": y_true, "Prediction": predictions}).head(20), width="stretch")
+    st.dataframe(pd.DataFrame({"Actual": y_true, "Prediction": predictions}).head(20), use_container_width=True)
+
 with col2:
     st.subheader("Evaluation Metrics")
-    st.dataframe(metrics_df, width="stretch")
+    st.dataframe(metrics_df, use_container_width=True)
 
 st.subheader("Confusion Matrix")
 fig, ax = plt.subplots(figsize=(6, 4))
