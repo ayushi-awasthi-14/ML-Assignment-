@@ -61,7 +61,7 @@ https://github.com/ayushi-awasthi-14/ML-Assignment-
 
 ## e. Live Streamlit App Link
 
-https://gh8danupwx7a27hhdm7mbm.streamlit.app/
+https://usuaqfp8ejc3vwquzqdw8w.streamlit.app/
 
 ---
 
