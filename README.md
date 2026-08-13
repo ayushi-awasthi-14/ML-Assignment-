@@ -1,7 +1,5 @@
 # Titanic Survival Classification with Streamlit
-
-**BITS WILP M.Tech (AIML/DSE) - Machine Learning Assignment 2**  
-**BITS WILP ID:** 2025AC05631
+**BITS ID:** 2025AC05631
 
 ---
 
