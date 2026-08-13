@@ -1,2 +1,6 @@
-*
-__pycache__/
+_pycache_/
+*.pyc
+.venv/
+venv/
+.idea/
+.streamlit/credentials.toml
